@@ -1,9 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { renderReactApp } from './render'
 import App from './App'
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLDivElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+renderReactApp({
+  elementId: 'root',
+  App: <App />,
+})
